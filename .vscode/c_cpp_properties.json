@@ -1,0 +1,29 @@
+{
+    "configurations": [{
+        "name": "Win32",
+        "includePath": [
+            "${workspaceFolder}/**",
+            "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\c99",
+            "C:\\Program Files (x86)\\Microchip\\xc8\\v2.05\\pic\\include\\"
+        ],
+        "defines": [
+            "_DEBUG",
+            "_GNU_SOURCE=0",
+            "_BSD_SOURCE=0",
+            "__18F24K40",
+            "__XC",
+            "__XC8",
+            "__XC8_VERSION=2000",
+            "_HTC_EDITION_=2",
+            "__PICCPRO__",
+            "__PICC__",
+            "_PIC14E",
+            "HI_TECH_C"
+        ],
+        "compilerPath": "C:/Program Files (x86)/Microchip/xc8/v2.05/bin/xc8.exe",
+        "cStandard": "c99",
+        "cppStandard": "c++17",
+        "intelliSenseMode": "clang-x64"
+    }],
+    "version": 4
+}

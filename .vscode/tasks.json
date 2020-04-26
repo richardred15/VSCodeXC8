@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [{
+			"type": "shell",
+			"label": "Build",
+			"command": "./scripts/build.bat",
+			"args": ["<part e.g. 18F24K40>", "<project/folder name>", "<errata>"],
+			"group": "build",
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "Build and Upload",
+			"command": "./scripts/build_upload.bat",
+			"args": ["<part e.g. 18F24K40>", "<project/folder name>", "<errata>"],
+			"group": "build",
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"type": "shell",
+			"label": "Upload",
+			"command": "./scripts/upload.bat",
+			"args": ["<project/folder name>"],
+			"group": "build",
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}
