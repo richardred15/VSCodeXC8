@@ -4,7 +4,7 @@
 			"type": "shell",
 			"label": "Build",
 			"command": "./scripts/build.bat",
-			"args": ["<part e.g. 18F24K40>", "<project/folder name>", "<errata>"],
+			"args": ["<part e.g. 18F24K40>", "${workspaceFolderBasename}", "<errata>"],
 			"group": "build",
 			"problemMatcher": [
 				"$gcc"
@@ -14,7 +14,7 @@
 			"type": "shell",
 			"label": "Build and Upload",
 			"command": "./scripts/build_upload.bat",
-			"args": ["<part e.g. 18F24K40>", "<project/folder name>", "<errata>"],
+			"args": ["<part e.g. 18F24K40>", "${workspaceFolderBasename}", "<errata>"],
 			"group": "build",
 			"problemMatcher": [
 				"$gcc"
@@ -24,7 +24,7 @@
 			"type": "shell",
 			"label": "Upload",
 			"command": "./scripts/upload.bat",
-			"args": ["<project/folder name>"],
+			"args": ["${workspaceFolderBasename}"],
 			"group": "build",
 			"problemMatcher": [
 				"$gcc"
