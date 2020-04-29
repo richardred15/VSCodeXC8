@@ -30,7 +30,6 @@ def draw_bar(width, perc, indent=10):
         line += "█"
     for i in range(width - filled):
         line += "░"
-    line += " " + str(math.floor(perc*1000)/10) + "%"
     draw_line(line, False, indent)
 
 
@@ -51,13 +50,10 @@ print("==============================================================")
 draw_line("PIC Mem Free", True)
 draw_line("")
 draw_line("")
-draw_line("Program Memory: " + str(prg_used) + " bytes used")
+draw_line("Program Memory: " + str(prg_used) + "bytes used - " +
+          str(math.floor(prg_rem*1000)/10) + "%")
 draw_bar(40, prg_rem)
-draw_line(str(prg_free) + " bytes free", False, 21)
-
-draw_line("")
-draw_line("Data Memory:    " + str(data_used) + " bytes used")
+draw_line("Data Memory: " + str(data_used) + "bytes used - " +
+          str(math.floor(data_rem*1000)/10) + "%")
 draw_bar(40, data_rem)
-draw_line(str(data_free) + " bytes free", False, 21)
-
 print("==============================================================")
