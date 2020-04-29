@@ -11,9 +11,17 @@ The args must be updated to fit your device
 {
     "type": "shell",
     "label": "Build",
-    "command": "./scripts/build.bat",
-    "args": ["<part e.g. 18F24K40>", "${workspaceFolderBasename}", "<errata>"],
+    "command": "scripts\\build.bat",
+    "args": ["<part number>", "${workspaceFolderBasename}", "<errata>"],
     "group": "build",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+    },
     "problemMatcher": [
         "$gcc"
     ]
